@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>How to build a website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="navigation">
+  <div id="navigation-inside">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="html.html">HTML</a></li>
+      <li><a href="css.html">CSS</a></li>
+      <li><a href="javascript.html" class="active">JavaScript</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="quick-menu">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="#for-loop">for loop</a></li>
+</ul>
+</div>
+
+<div id="header">
+    <img src="img/header-image.jpg" alt="Header Image">
+<div id="profile">
+<div id="profile-image">
+<img src="img/profile-icon.png" alt="Profile icon">
+</div>
+<h2>by<br>Kenny Wood</h2>
+</div>
+</div>
+  
+<div id="introduction">
+<h1>JavaScript</h1>
+<p>Welcome to the dedicated JavaScript section. This page contains all of the JavaScript elements that I have understood and used so far on my journey into web design.</p>
+</div>
+
+<div id="for-loop" class="section">
+    <h1>for loop</h1>
+    <p>for loops are great for getting a statement to run a certain number of times. In the below example, clicking the button will start a for loop which will run exactly 10 times and log to the console each time</p>
+    <div class="example">
+<script>
+  function runForLoop() {
+for( var i = 1; i <= 10; i++ ) {
+  console.log("This loop has run " + i + " times");
+}
+  }
+  </script>
+  <input type="button" class="run-javascript" value="Run for loop" onclick="runForLoop()" />
+    </div>
+    <input class="code-show-button" type="button" onClick="showCode('for-loop')" value="Show code" />
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>

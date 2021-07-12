@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>How to build a website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="navigation">
+  <div id="navigation-inside">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="html.html" class="active">HTML</a></li>
+      <li><a href="css.html">CSS</a></li>
+      <li><a href="javascript.html">JavaScript</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="quick-menu">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="#tables">Tables</a></li>
+<li><a href="#forms">Forms</a></li>
+</ul>
+</div>
+
+<div id="header">
+    <img src="img/header-image.jpg" alt="Header Image">
+<div id="profile">
+<div id="profile-image">
+<img src="img/profile-icon.png" alt="Profile icon">
+</div>
+<h2>by<br>Kenny Wood</h2>
+</div>
+</div>
+  
+<div id="introduction">
+<h1>HTML</h1>
+<p>Welcome to the dedicated HTML section. This page contains all of the HTML elements that I have understood and used so far on my journey into web design.</p>
+</div>
+
+<div id="tables" class="section">
+    <h1>Tables</h1>
+    <p>Tables help us to structure data and display it in an easy to digest format.</p>
+    <div class="example">
+        <table>
+            <tr>
+              <th>First Column</th>
+              <th>Second Column</th> 
+              <th>Third Column</th>
+            </tr>
+            <tr>
+              <td>Row 1 - Cell 1</td>
+              <td>Row 1 - Cell 2</td> 
+              <td>Row 1 - Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2 - Cell 1</td>
+                <td>Row 2 - Cell 2</td> 
+                <td>Row 2 - Cell 3</td>
+            </tr>
+          </table>
+    </div>
+    <input class="code-show-button" type="button" onClick="showCode('tables')" value="Show code" />
+    </div>
+
+    <div id="forms" class="section">
+      <h1>Forms</h1>
+      <p>Forms allow us to collect an input from a user and perform an action with their input.</p>
+      <div class="example">
+        <form onsubmit="return alert('Form was submitted!')" method="post">
+          <input type="text" name="name" placeholder="name"><br>
+          <input type="text" name="mail" placeholder="email"><br>
+          <input type="submit" value="Submit">
+          </form> 
+      </div>
+      <input class="code-show-button" type="button" onClick="showCode('forms')" value="Show code" />
+      </div>
+  
+
+<script src="main.js"></script>
+</body>
+</html>

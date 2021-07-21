@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="styles/main.css"> 
 	<title>Web Design Components</title>
 </head>
 <body>
+	<div id="jump-list">
+		<ul>
+			<li> <a href="#tables">Tables</a></li>
+			<li><a href="#lists">Lists</a></li>
+			<li><a href="#forms">Forms</a></li>
+		</ul>
+	</div>
 	<div class="full-width-image">
 		<img src="introduction.jpg" alt="Introduction Header Image">	
 	</div>
@@ -53,6 +61,22 @@
 				<dt>Definition List Term 2</dt><dd>2</dd>
 				<dt>Definition List Term 3</dt><dd>3</dd>
 			</dl>
+		</div>
+	</div>
+	<div id="forms" class="new-section">
+		<div class="section-header">
+			<h1>Forms</h1>
+		</div>
+		<div class="section-body">
+			<form action="mailto:contact@website.com?subject=New%20User%20Request" method="post">
+			<label for="firstname">First Name:</label><br>
+			<input type="text" name="firstname"><br>
+            <label for = "surname">Surname:</label><br>
+			<input type="text" name="surname"><br>
+			<label for="mail">Email:</label><br>
+			<input type="text" name="mail"><br>
+			<input type="submit">
+		</form>
 		</div>
 	</div>
 </body>

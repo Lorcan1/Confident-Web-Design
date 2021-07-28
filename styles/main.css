@@ -1,3 +1,12 @@
 h1 {
 	color: blue
 }
+
+.navigation-card{
+	height: 150px;
+	width:150px;
+	background-image: url("../exampleicon.png");		
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
